@@ -20,12 +20,12 @@ module.exports = class Queue {
     }
 
     dequeue() {
-      let result = this.head.value
-      this.head = this.head.next
-      if (this.head.next !== null){
-        this.last = null
-      }
-      return result
+        let result = this.head.value
+        this.head = this.head.next
+        if (this.head.next !== null){
+            this.last = null
+        }
+        return result
     }
 
 }
